@@ -102,48 +102,48 @@ if ENV:
     except ValueError:
         raise Exception("Your scout users list does not contain valid integers.")
 
-    INFOPIC = bool(os.environ.get("INFOPIC", False)) # Info Pic (use True[Value] If You Want To Show In /info.)
-    EVENT_LOGS = os.environ.get("EVENT_LOGS", None) # G-Ban Logs (Channel) (-100)
-    ERROR_LOGS = os.environ.get("ERROR_LOGS", None) # Error Logs (Channel Ya Group Choice Is Yours) (-100)
+    INFOPIC = bool(os.environ.get("INFOPIC", True)) # Info Pic (use True[Value] If You Want To Show In /info.)
+    EVENT_LOGS = os.environ.get("EVENT_LOGS", "1001907552636") # G-Ban Logs (Channel) (-100)
+    ERROR_LOGS = os.environ.get("ERROR_LOGS", "1001907552636") # Error Logs (Channel Ya Group Choice Is Yours) (-100)
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # If You Deploy On Heraku. [URL PERTEN:- https://{App Name}.herokuapp.com/ || EXP:- https://yuki-cutiepii-robot.herokuapp.com/]
     PORT = int(os.environ.get("PORT", 8443)) 
     CERT_PATH = os.environ.get("CERT_PATH")
-    API_ID = os.environ.get("API_ID", None) # Bot Owner's API_ID (From:- https://my.telegram.org/auth)
-    API_HASH = os.environ.get("API_HASH", None) # Bot Owner's API_HASH (From:- https://my.telegram.org/auth)
-    DB_URL = os.environ.get("DATABASE_URL") # Any SQL Database Link (RECOMMENDED:- PostgreSQL & https://www.elephantsql.com)
+    API_ID = os.environ.get("API_ID", "17713634") # Bot Owner's API_ID (From:- https://my.telegram.org/auth)
+    API_HASH = os.environ.get("API_HASH", "a8c943a69022fef3ac66accc7ba8ce6b") # Bot Owner's API_HASH (From:- https://my.telegram.org/auth)
+    DB_URL = os.environ.get("DATABASE_URL" "postgres://cbkkplni:WudmcG6nmnJv0mlV5KN9xCM2M7Wv9ZCD@ziggy.db.elephantsql.com/cbkkplni") # Any SQL Database Link (RECOMMENDED:- PostgreSQL & https://www.elephantsql.com)
     DONATION_LINK = os.environ.get("DONATION_LINK") # Donation Link (ANY)
     LOAD = os.environ.get("LOAD", "").split() # Don't Change
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split() # Don't Change
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False)) # Don't Change
-    STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", False)) # Use `True` Value
+    STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", "True")) # Use `True` Value
     WORKERS = int(os.environ.get("WORKERS", 8)) # Don't Change
     BAN_STICKER = os.environ.get("BAN_STICKER", "CAADAgADOwADPPEcAXkko5EB3YGYAg") # Don't Change
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False) # Don't Change
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./") # Don't Change
-    CASH_API_KEY = os.environ.get("CASH_API_KEY", None) # From:- https://www.alphavantage.co/support/#api-key
-    TIME_API_KEY = os.environ.get("TIME_API_KEY", None) # From:- https://timezonedb.com/api
+    CASH_API_KEY = os.environ.get("CASH_API_KEY", "DOAZ203APP81XZBU") # From:- https://www.alphavantage.co/support/#api-key
+    TIME_API_KEY = os.environ.get("TIME_API_KEY", "J0DHD4VJ1Z53") # From:- https://timezonedb.com/api
     WALL_API = os.environ.get("WALL_API", None) # From:- https://wall.alphacoders.com/api.php
-    REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None) # From:- https://www.remove.bg/
-    OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", "") # From:- https://openweathermap.org/api
-    GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", None) # From:- http://genius.com/api-clients
-    MONGO_DB_URL = os.environ.get("MONGO_DB_URL", None) # MongoDB URL (From:- https://www.mongodb.com/)
-    REDIS_URL = os.environ.get("REDIS_URL", None) # REDIS URL (From:- Heraku & Redis)
-    BOT_ID = int(os.environ.get("BOT_ID", None)) # Telegram Bot ID (EXP:- 1241223850)
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None) # Support Chat Group Link (Use @Black_Knights_Union_Support || Dont Use https://t.me/Black_Knights_Union_Support)
-    SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", None) # Use @SpamWatchSupport
-    SPAMWATCH_API = os.environ.get("SPAMWATCH_API", None) # From https://t.me/SpamWatchBot 
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "") # Bot Username
-    STRING_SESSION = os.environ.get("STRING_SESSION", None) # Telethon Based String Session (2nd ID) [ From https://repl.it/@SpEcHiDe/GenerateStringSession ]
-    APP_ID = os.environ.get("APP_ID", None) # 2nd ID 
-    APP_HASH = os.environ.get("APP_HASH", None) # 2nd ID
+    REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "FKtfHZpdv4FY7AsbwRJxR4CL") # From:- https://www.remove.bg/
+    OPENWEATHERMAP_ID = os.environ.get("OPENWEATHERMAP_ID", "b8fc1dd4f545975d9623bbf78512e88f") # From:- https://openweathermap.org/api
+    GENIUS_API_TOKEN = os.environ.get("GENIUS_API_TOKEN", "J0XQbomr5vkTnZmEYzl7u95Lh57joWtWXyuUeePrM6-24BfITml18ZfXsQqxOzeB") # From:- http://genius.com/api-clients
+    MONGO_DB_URL = os.environ.get("MONGO_DB_URL", "mongodb+srv://moni1:ammu@cluster0.lmgyalw.mongodb.net/?retryWrites=true&w=majority") # MongoDB URL (From:- https://www.mongodb.com/)
+    REDIS_URL = os.environ.get("REDIS_URL", "redis-15515.c80.us-east-1-2.ec2.cloud.redislabs.com:15515") # REDIS URL (From:- Heraku & Redis)
+    BOT_ID = int(os.environ.get("BOT_ID", "152365859")) # Telegram Bot ID (EXP:- 1241223850)
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "@CrazyKiller_S") # Support Chat Group Link (Use @Black_Knights_Union_Support || Dont Use https://t.me/Black_Knights_Union_Support)
+    SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", "@CrazyKiller_S") # Use @SpamWatchSupport
+    SPAMWATCH_API = os.environ.get("SPAMWATCH_API", "https://t.me/CrazyKiller_S") # From https://t.me/SpamWatchBot 
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "@raangii_bot") # Bot Username
+    STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOIwBuxmkZeQ3vCwFYdBqNigfk8b4joP-pAHLpDhMqmsllKJGR9kFe2HZUyEUzRZL3vzbn4ptjfE6kjPJyqsAsMhASC3MCFJW9J8FEa5OviiB3QySN27iHKe0Mky8JzUtUJd0bHUrRdrV9DYBsomZw92L0K3wGLN-pMO-UZ-AH37n4ObZRKdt4wI5L6o6wJuSKgcPnI1HMb4wjN3B-kbnWW2CxJwZO3ltMHT7-YRMTDXsRK1KvLQnvgUP-xpjmRC5oUOgXnBy1cFWgNaV0W1bAemulAbZNNXJjf27CnT_VBLDimHMtVlwEj_WL6myx9121lOAALPJY5RAhogka3yghTGBeeg=") # Telethon Based String Session (2nd ID) [ From https://repl.it/@SpEcHiDe/GenerateStringSession ]
+    APP_ID = os.environ.get("APP_ID", "17713634") # 2nd ID 
+    APP_HASH = os.environ.get("APP_HASH", "a8c943a69022fef3ac66accc7ba8ce6b") # 2nd ID
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", True) # Heroku App Name 
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", True) # Heroku API [From https://dashboard.heroku.com/account]
     YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", True)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True) # Don't Change
     BOT_NAME = os.environ.get("BOT_NAME", True) # Name Of your Bot.4
     MONGO_DB = "Cutiepii"
-    ARQ_API_URL = "https://thearq.tech"
+    ARQ_API_URL = "https://thearq.tech" 
     GOOGLE_CHROME_BIN = "/usr/bin/google-chrome"
     CHROME_DRIVER = "/usr/bin/chromedriver"
     BOT_API_URL = os.environ.get('BOT_API_URL', "https://api.telegram.org/bot")
@@ -153,7 +153,7 @@ if ENV:
     CUTIEPII_PHOTO = os.environ.get("CUTIEPII_PHOTO", True)
     
     try:
-        BL_CHATS = {int(x) for x in os.environ.get("BL_CHATS", "").split()}
+        BL_CHATS = {int(x) for x in os.environ.get("BL_CHATS", "1001705899676").split()}
     except ValueError:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
@@ -163,12 +163,12 @@ else:
     TOKEN = Config.TOKEN
 
     try:
-        OWNER_ID = int(Config.OWNER_ID)
+        OWNER_ID = 5444362033
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
     JOIN_LOGGER = Config.JOIN_LOGGER
-    OWNER_USERNAME = Config.OWNER_USERNAME
+    OWNER_USERNAME = @Mr_king008
     ALLOW_CHATS = Config.ALLOW_CHATS
     try:
         DRAGONS = {int(x) for x in Config.DRAGONS or []}
