@@ -133,7 +133,7 @@ if ENV:
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "@CrazyKiller_S") # Support Chat Group Link (Use @Black_Knights_Union_Support || Dont Use https://t.me/Black_Knights_Union_Support)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", "@CrazyKiller_S") # Use @SpamWatchSupport
     SPAMWATCH_API = os.environ.get("SPAMWATCH_API", "https://t.me/CrazyKiller_S") # From https://t.me/SpamWatchBot 
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "@raangii_bot") # Bot Username
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "raangii_bot") # Bot Username
     STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOIwBuxmkZeQ3vCwFYdBqNigfk8b4joP-pAHLpDhMqmsllKJGR9kFe2HZUyEUzRZL3vzbn4ptjfE6kjPJyqsAsMhASC3MCFJW9J8FEa5OviiB3QySN27iHKe0Mky8JzUtUJd0bHUrRdrV9DYBsomZw92L0K3wGLN-pMO-UZ-AH37n4ObZRKdt4wI5L6o6wJuSKgcPnI1HMb4wjN3B-kbnWW2CxJwZO3ltMHT7-YRMTDXsRK1KvLQnvgUP-xpjmRC5oUOgXnBy1cFWgNaV0W1bAemulAbZNNXJjf27CnT_VBLDimHMtVlwEj_WL6myx9121lOAALPJY5RAhogka3yghTGBeeg=") # Telethon Based String Session (2nd ID) [ From https://repl.it/@SpEcHiDe/GenerateStringSession ]
     APP_ID = os.environ.get("APP_ID", "17713634") # 2nd ID 
     APP_HASH = os.environ.get("APP_HASH", "a8c943a69022fef3ac66accc7ba8ce6b") # 2nd ID
@@ -168,7 +168,7 @@ else:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
     JOIN_LOGGER = Config.JOIN_LOGGER
-    OWNER_USERNAME = @Mr_king008
+    OWNER_USERNAME = Mr_king008
     ALLOW_CHATS = Config.ALLOW_CHATS
     try:
         DRAGONS = {int(x) for x in Config.DRAGONS or []}
