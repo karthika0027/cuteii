@@ -1,4 +1,4 @@
-"""
+do"""
 MIT License
 
 Copyright (C) 2017-2019, Paul Larsen
@@ -82,8 +82,8 @@ if ENV:
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
 
     try:
-        DRAGONS = {int(x) for x in os.environ.get("DRAGONS", "").split()}
-        DEV_USERS = {int(x) for x in os.environ.get("DEV_USERS", "").split()}
+        DRAGONS = {int(x) for x in os.environ.get("DRAGONS", "6071068788").split()}
+        DEV_USERS = {int(x) for x in os.environ.get("DEV_USERS", "6071068788").split()}
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
@@ -130,9 +130,9 @@ if ENV:
     MONGO_DB_URL = os.environ.get("MONGO_DB_URL", "mongodb+srv://moni1:ammu@cluster0.lmgyalw.mongodb.net/?retryWrites=true&w=majority") # MongoDB URL (From:- https://www.mongodb.com/)
     REDIS_URL = os.environ.get("REDIS_URL", "redis-15515.c80.us-east-1-2.ec2.cloud.redislabs.com:15515") # REDIS URL (From:- Heraku & Redis)
     BOT_ID = int(os.environ.get("BOT_ID", "152365859")) # Telegram Bot ID (EXP:- 1241223850)
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "@CrazyKiller_S") # Support Chat Group Link (Use @Black_Knights_Union_Support || Dont Use https://t.me/Black_Knights_Union_Support)
-    SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", "@CrazyKiller_S") # Use @SpamWatchSupport
-    SPAMWATCH_API = os.environ.get("SPAMWATCH_API", "https://t.me/CrazyKiller_S") # From https://t.me/SpamWatchBot 
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "CrazyKiller_S") # Support Chat Group Link (Use @Black_Knights_Union_Support || Dont Use https://t.me/Black_Knights_Union_Support)
+    SPAMWATCH_SUPPORT_CHAT = os.environ.get("SPAMWATCH_SUPPORT_CHAT", "CrazyKiller_S") # Use @SpamWatchSupport
+    SPAMWATCH_API = os.environ.get("SPAMWATCH_API", "gG9hfb1P8cth9klUdvsawrBRqYGoZi8_S8h1wsR6Yyo0OhTNQlzmQDP_m_jKCtzd") # From https://t.me/SpamWatchBot 
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "raangii_bot") # Bot Username
     STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOIwBuxmkZeQ3vCwFYdBqNigfk8b4joP-pAHLpDhMqmsllKJGR9kFe2HZUyEUzRZL3vzbn4ptjfE6kjPJyqsAsMhASC3MCFJW9J8FEa5OviiB3QySN27iHKe0Mky8JzUtUJd0bHUrRdrV9DYBsomZw92L0K3wGLN-pMO-UZ-AH37n4ObZRKdt4wI5L6o6wJuSKgcPnI1HMb4wjN3B-kbnWW2CxJwZO3ltMHT7-YRMTDXsRK1KvLQnvgUP-xpjmRC5oUOgXnBy1cFWgNaV0W1bAemulAbZNNXJjf27CnT_VBLDimHMtVlwEj_WL6myx9121lOAALPJY5RAhogka3yghTGBeeg=") # Telethon Based String Session (2nd ID) [ From https://repl.it/@SpEcHiDe/GenerateStringSession ]
     APP_ID = os.environ.get("APP_ID", "17713634") # 2nd ID 
@@ -163,12 +163,12 @@ else:
     TOKEN = Config.TOKEN
 
     try:
-        OWNER_ID = 5444362033
+        OWNER_ID = Config.OWNER_ID
     except ValueError:
         raise Exception("Your OWNER_ID variable is not a valid integer.")
 
     JOIN_LOGGER = Config.JOIN_LOGGER
-    OWNER_USERNAME = Mr_king008
+    OWNER_USERNAME = Config.OWNER_USERNAME
     ALLOW_CHATS = Config.ALLOW_CHATS
     try:
         DRAGONS = {int(x) for x in Config.DRAGONS or []}
@@ -248,8 +248,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1809105906)
-DEV_USERS.add(1470075895)
+
 
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
@@ -312,10 +311,10 @@ print("[INFO]: INITIALZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
 # ARQ Client
 print("[INFO]: INITIALIZING ARQ CLIENT")
-arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
+arq = ARQ("https://thearq.tech", "XNVFXV-OOVHAJ-LBRRUW-AHMMDI-ARQ", aiohttpsession)
 print("[CUTIEPII]: Connecting To Yūki • Data Center • Mumbai • PostgreSQL Database")
 ubot = TelegramClient(StringSession(STRING_SESSION), APP_ID, APP_HASH)
-print("[CUTIEPII]: Connecting To Yūki • Cutiepii Userbot (t.me/Awesome_Cutiepii)")
+print("[CUTIEPII]: Connecting To Yūki • Cutiepii Userbot (t.me/raangii_bot)")
 timeout = httpx.Timeout(40)
 http = httpx.AsyncClient(http2=True, timeout=timeout)
 
